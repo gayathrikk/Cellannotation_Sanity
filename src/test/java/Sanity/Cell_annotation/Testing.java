@@ -184,7 +184,7 @@ public class Testing {
 		        }
 	    	 
 	    	 try {
-	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='712'])[1]")));
+	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='727'])[1]")));
 	  		    section.click();
 	  		    System.out.println("section clicked successfully.");
 	  		    Thread.sleep(2000);
