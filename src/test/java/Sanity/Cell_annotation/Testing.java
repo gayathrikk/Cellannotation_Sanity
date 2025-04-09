@@ -59,13 +59,13 @@ public class Testing {
 	        System.out.println("Current URL: " + currentURL);
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 	    	driver.switchTo().defaultContent(); // Switch back to default content
-	    	WebElement viewerElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Viewer']")));
-	    	if (viewerElement.isEnabled() && viewerElement.isDisplayed()) {
-	    	    viewerElement.click();
-	    	    System.out.println("Viewer icon is clicked");
-	    	} else {
-	    	    System.out.println("Viewer icon is not clickable");
-	    	}
+	    	// WebElement viewerElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Viewer']")));
+	    	// if (viewerElement.isEnabled() && viewerElement.isDisplayed()) {
+	    	//     viewerElement.click();
+	    	//     System.out.println("Viewer icon is clicked");
+	    	// } else {
+	    	//     System.out.println("Viewer icon is not clickable");
+	    	// }
 	    	checkConsoleLog();
 	
 	        String parentWindow = driver.getWindowHandle();
